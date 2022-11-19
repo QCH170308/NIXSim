@@ -125,3 +125,19 @@ After constructing datasets, run ``sh train_l7c32_QNN.sh`` to train the SCN mode
 NIXSim does not support bit-splitting, which uses multiple low-precision cells to represent high-precision weight. For instance, bit-splitting enable four 2-bit-per-cell devices (i.e., each cell has 4 resistance states) to represent an 8-bit weight parameter.
 
 The pre-trained SCN models we provide are accurate for IR drop only simulation. However, if you inject different amounts of other nonideality (e.g., variability), we cannot guarantee that the provided SCN model predicts well. Therefore, for such cases, users may need to train a new SCN model.
+
+## Publication
+
+If you use NIXSim in your research, please cite our paper:
+```
+@inproceedings{nixsim20dac,
+  author =       {Sugil Lee and Mohammed Fouda and Jongeun Lee and Ahmed Eltawil and Fadi Kurdahi},
+  title =        {Learning to Predict {IR} Drop with Effective Training for {ReRAM}-based Neural Network Hardware},
+  booktitle =    {2020 57th ACM/IEEE Design Automation Conference (DAC)},
+  pages =        {1-6},
+  month =        jul,
+  year =         2020,
+  location =     {San Francisco, CA (Virtual)},
+  doi =          {10.1109/DAC18072.2020.9218735},
+}
+```
