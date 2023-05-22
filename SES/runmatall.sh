@@ -48,7 +48,7 @@ for a in ../$dir/L*.csv; do
     c=../$Ydir/$b
     [ -f $c ] && continue
     arrname="${b%.*}"
-    l=../$dir/lg/$arrname.log
+    l=../$Ydir/lg/$arrname.log
     wait_for_proc
     echo "launching process for $a .. $cnt"
     time matlab -singleCompThread -nodisplay -nojvm -r "!./Sim1 $a $c $rw $ref $nb $sig $alp $sa0 $sa1 $noise $gmin $gmax; quit" &>$l &
