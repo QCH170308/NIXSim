@@ -50,7 +50,7 @@ for ((i=1; i<=100; i++)) do
     [ -f $c ] && continue
     wait_for_proc
     echo "launching process for $i"
-    time matlab -singleCompThread -nodisplay -nojvm -r "Sim1 $a $b $c $d $e $f $ref; quite" &
+    time matlab -singleCompThread -nodisplay -nojvm -r "Sim1 $a $b $c $d $e $f $ref; quit" &
 
     proc[$pp]=$!
     update_proc
