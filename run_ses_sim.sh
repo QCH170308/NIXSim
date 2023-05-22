@@ -29,9 +29,12 @@ mkdir -p $Ydir/lg
 #--------- Unbalanced Case -----------
 
 #sp=spRw${rw}-${sig}-${sa0}-${sa1}-${noise}Ref$ref
-#mkdir -p $dir/$sp
+#Ydir=$dir/$sp
 
-  #dir=$dir rw=$rw ref=$ref nb=$nb sp=$sp sig=$sig alp=1 sa0=$sa0 sa1=$sa1 noise=$noise gmin=$gmin gmax=$gmax ./SES/runmatall.sh 30
+#mkdir -p $Ydir
+#mkdir -p $Ydir/lg
+
+  #dir=$dir rw=$rw ref=$ref nb=$nb Ydir=$Ydir sig=$sig alp=1 sa0=$sa0 sa1=$sa1 noise=$noise gmin=$gmin gmax=$gmax ./SES/runmatall.sh 30
   
 #-------------------------------------
 
