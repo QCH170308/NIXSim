@@ -51,7 +51,7 @@ for a in ../$dir/L*.csv; do
     l=../$Ydir/lg/$arrname.log
     wait_for_proc
     echo "launching process for $a .. $cnt"
-    time matlab -singleCompThread -nodisplay -nojvm -r "!./Sim1 $a $c $rw $ref $nb $sig $alp $sa0 $sa1 $noise $gmin $gmax; quit" &>$l &
+    ./run_Sim.sh /home/quanch/MATLAB/R2022a/ $a $c $rw $ref $nb $sig $alp $sa0 $sa1 $noise $gmin $gmax
     proc[$pp]=$!
     update_proc
 
