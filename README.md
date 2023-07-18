@@ -153,7 +153,19 @@ The pre-trained SCN models we provide are accurate for IR drop only simulation. 
 
 If you use NIXSim in your research, please cite our paper:
 ```
-@inproceedings{nixsim20dac,
+@INPROCEEDINGS{nixsim,
+  author={Quan, Chenghao and Fouda, Mohammed E. and Lee, Sugil and Lee, Jongeun},
+  booktitle={2022 56th Asilomar Conference on Signals, Systems, and Computers}, 
+  title={Multi-Fidelity Nonideality Simulation and Evaluation Framework for Resistive Neuromorphic Computing}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1152-1156},
+  doi={10.1109/IEEECONF56349.2022.10052098}}
+```
+SCN paper
+```
+@inproceedings{scn20dac,
   author =       {Sugil Lee and Mohammed Fouda and Jongeun Lee and Ahmed Eltawil and Fadi Kurdahi},
   title =        {Learning to Predict {IR} Drop with Effective Training for {ReRAM}-based Neural Network Hardware},
   booktitle =    {2020 57th ACM/IEEE Design Automation Conference (DAC)},
